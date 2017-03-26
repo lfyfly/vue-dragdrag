@@ -1,5 +1,5 @@
 ﻿
-// (function () {
+(function () {
 var vueDragDrag = {}
 
 vueDragDrag.install = function (Vue) {
