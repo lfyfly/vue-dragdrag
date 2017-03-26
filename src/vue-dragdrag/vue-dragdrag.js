@@ -68,6 +68,12 @@ vueDragDrag.install = function (Vue) {
           moveEl.style.left = left + 'px'
           moveEl.style.top = top + 'px'
 
+          // 拖拽事件
+          if (binding.value && binding.value.ondrag) {
+            if (typeof binding.value.ondrag != 'function') throw 'ondrag: should be a function'
+            binding.value.ondrag(e, { left: left, top: top })
+          }
+
         }
         // mousemove
         document.addEventListener('mousemove', mouseMoveFn)

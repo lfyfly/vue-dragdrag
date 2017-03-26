@@ -3,9 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 
-import vue2Draggable from './vue2-draggable/vue2-draggable.js'
-console.log(vue2Draggable)
-Vue.use(vue2Draggable)
+import vueDragDrag from './vue-dragdrag/vue-dragdrag.js'
+console.log(vueDragDrag)
+Vue.use(vueDragDrag)
 
 /* eslint-disable no-new */
 new Vue({

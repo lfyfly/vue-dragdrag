@@ -28,6 +28,14 @@
            v-drag>v-drag</div>
     </div>
 
+     <div class="container">
+      <h4>ondrag事件</h4>
+      <h4 style="color:green">源码: binding.value.ondrag(event, { left: left, top: top })</h4>
+      <h4 style="color:green">drag方法: drag(event,coordinate){ console.log(event, coordinate.left, coordinate.top) }</h4>
+      <div class="test1" style="width:400px;"
+           v-drag="{ondrag:drag}">v-drag="{ondrag:drag}"</div>
+    </div>
+
     <div class="container">
       <h4>只能在容器内水平拖动</h4>
 
@@ -127,6 +135,11 @@ export default {
   data() {
     return {
       arr: [1111, 2222, 4444, 5555]
+    }
+  },
+  methods:{
+    drag(e,obj) {
+      console.log(e,obj)
     }
   },
   components: {
