@@ -1,6 +1,6 @@
 {
   "name": "vue-dragdrag",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "vue2 drag directive",
   "main": "index.js",
   "author": "lfyfly <410793635@qq.com>",
