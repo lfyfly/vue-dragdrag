@@ -5,6 +5,7 @@
   vueDragDrag.install = function (Vue) {
     Vue.directive('drag', {
       inserted: function (el, binding) {
+
         // 拖拽时的手势
         el.style.cursor = binding.value && binding.value.cursor ? binding.value.cursor : 'default'
 
